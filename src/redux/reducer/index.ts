@@ -1,5 +1,7 @@
 import { combineReducers } from 'redux';
 
-const reducer = combineReducers({});
+import profileReducer from './adminReducer';
+
+const reducer = combineReducers({ profileReducer });
 
 export default reducer;
