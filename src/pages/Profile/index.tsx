@@ -11,7 +11,7 @@ const ProfilePage: React.FC = () => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.profile}>
-				<h1>{profile}</h1>
+				<h1 className={styles.title}>Login: {profile}</h1>
 			</div>
 		</section>
 	);

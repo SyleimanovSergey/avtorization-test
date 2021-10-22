@@ -19,9 +19,9 @@ const AuthorizationForm: React.FC = () => {
 			onSubmit={submit}
 		>
 			{({ isValid, dirty }) => (
-				<Form>
+				<Form className={styles.form}>
 					<div className={styles.formTitleBlock}>
-						<h1 className={styles.formTitleText}>Please log in</h1>
+						<h1 className={styles.formTitleText}>Sign in, please</h1>
 					</div>
 					<div className={styles.formBlock}>
 						<FormikControl
@@ -42,7 +42,7 @@ const AuthorizationForm: React.FC = () => {
 							className={styles.button}
 							type="submit"
 						>
-							Go!
+							Log in!
 						</button>
 					</div>
 				</Form>

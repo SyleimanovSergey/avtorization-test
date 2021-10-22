@@ -8,13 +8,15 @@ import ProfilePage from 'pages/Profile';
 
 import { LinkPathName } from 'interface/constatns';
 
+import styles from './index.module.scss'
+
 const { MAIN, PROFILE } = LinkPathName;
 
-const Router: React.FC = () => {
+const Routers: React.FC = () => {
 	return (
 		<>
 			<Header />
-			<main>
+			<main className={styles.main}>
 				<Switch>
 					<Route exact path={MAIN} component={AuthorizationPage} />
 					<Route exact path={PROFILE} component={ProfilePage} />
@@ -25,4 +27,4 @@ const Router: React.FC = () => {
 	);
 };
 
-export default Router;
+export default Routers;
